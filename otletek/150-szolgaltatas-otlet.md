@@ -88,10 +88,132 @@
 
 ## 2. lista — Független második AI-vélemény 50 ötlete
 
-*(feltöltés alatt)*
+*Megjegyzés: a Codex ebből a környezetből hálózati tiltás miatt nem volt elérhető, ezért ezt a listát egy teljesen független, friss kontextusú AI-agens készítette, az 1. listától elszigetelten.*
+
+51. **Weboldal-uptime felügyelet és azonnali riasztás** – 0-24 monitorozás, leállás esetén azonnali intézkedés és értesítés, havi rendelkezésre állási riporttal. Minden cégnek pénzbe kerül minden perc leállás, de senki nem figyeli saját maga.
+52. **Automatikus weboldal-mentés és visszaállítási garancia** – Napi teljes mentés külső tárhelyre, negyedéves visszaállítási teszt, baj esetén a szolgáltató állítja helyre az oldalt.
+53. **WordPress/CMS karbantartás és frissítéskezelés** – Heti bővítmény-, sablon- és rendszerfrissítés tesztkörnyezetben ellenőrizve, ütközések javításával.
+54. **Weboldal-sebesség optimalizálás és havi teljesítményriport** – Folyamatos Core Web Vitals mérés, kép- és kódoptimalizálás, gyorsítótár-hangolás, havi összehasonlító riporttal.
+55. **Weboldal-biztonsági felügyelet és malware-eltávolítás** – Napi kártevő-szkennelés, tűzfal-kezelés, feltörés esetén teljes fertőtlenítés.
+56. **SSL- és domain-lejárat menedzsment** – Tanúsítványok és domainek megújításának kezelése, DNS-beállítások — soha nem jár le semmi váratlanul.
+57. **Törött linkek és hibák havi auditja javítással** – Havi teljes oldalátvizsgálás 404-esekre, hibás átirányításokra, hiányzó képekre, és mindet ki is javítjuk.
+58. **Havi Google Analytics riport vezetői összefoglalóval** – Közérthető, magyar nyelvű havi riport: honnan jönnek a látogatók, mi működik, konkrét javaslatokkal.
+59. **GA4 és konverziómérés karbantartása** – A mérési beállítások, események, célok folyamatos ellenőrzése és javítása — a legtöbb cég mérése észrevétlenül elromlik.
+60. **Konkurenciafigyelő havi riport** – A versenytársak árai, új termékei, hirdetései, tartalmai és Google-helyezései havi összefoglalóban.
+61. **Kulcsszópozíció-követés és SEO-helyzetjelentés** – Heti pozíciókövetés a fontos kulcsszavakra, havi közérthető riport a mozgásokról és teendőkről.
+62. **Technikai SEO-felügyelet és folyamatos javítás** – Havi crawl-audit (indexelési hibák, duplikációk, sitemap, strukturált adatok), a talált hibák kijavításával.
+63. **Havi blogbejegyzés-írás és publikálás** – Kulcsszókutatásra épülő, SEO-optimalizált cikkek képekkel, belső linkekkel, feltöltve és publikálva.
+64. **Google Cégem (Business Profile) kezelés** – Heti bejegyzések, fotófrissítés, adatkarbantartás, kérdések megválaszolása, profiloptimalizálás.
+65. **Online értékelések figyelése és megválaszolása** – Minden Google-, Facebook- és portálértékelésre 24 órán belül professzionális válasz a cég nevében.
+66. **Vélemény-gyűjtő rendszer üzemeltetése** – Automatizált folyamat, ami a vásárlókból rendszeresen új pozitív értékeléseket generál, havi riporttal.
+67. **Márkaemlítés- és sajtófigyelés** – Folyamatos figyelés, hol írnak a cégről, vezetőkről, termékekről, azonnali riasztással negatív említésnél.
+68. **Social media tartalomgyártás és posztolás** – Havi tartalomnaptár, grafikák és szövegek elkészítése, időzített publikálás a cég profiljain.
+69. **Havi hírlevél-írás és -kiküldés** – Megírjuk, megszerkesztjük és kiküldjük a havi hírlevelet, eredményriporttal.
+70. **E-mail lista tisztítás és kézbesíthetőség-felügyelet** – Listahigiénia, bounce-kezelés, SPF/DKIM/DMARC felügyelet, spamszűrő-tesztek.
+71. **Elhagyott kosár és automata e-mail folyamatok üzemeltetése** – Üdvözlő, kosárelhagyó és visszacsábító sorozatok megírása, beállítása, folyamatos optimalizálása.
+72. **Google Ads kampánykezelés havi díjas modellben** – Folyamatos karbantartás, kulcsszó- és ajánlatoptimalizálás, negatív kulcsszavak, havi riport.
+73. **Meta (Facebook/Instagram) hirdetéskezelés** – Kreatívok készítése, célzások tesztelése, büdzsé-optimalizálás fix díjért.
+74. **Hirdetési fiók auditálás és kattintáscsalás-védelem** – Havi fiókátvilágítás pazarló beállításokra, click-fraud szűrés, kizárások kezelése.
+75. **Remarketing-rendszer üzemeltetése** – Visszacélzó kampányok és közönséglisták felépítése és folyamatos frissítése minden csatornán.
+76. **Konverzióoptimalizálási program (CRO) havi tesztekkel** – Havonta egy A/B teszt megtervezése, beépítése és kiértékelése.
+77. **Hőtérkép- és látogatófelvétel-elemzés** – Hőtérképek és session-felvételek üzemeltetése, havi kielemzés, a javítások beépítésével.
+78. **GDPR- és cookie-megfelelőség felügyelet** – Cookie-banner üzemeltetés, tájékoztató-karbantartás, új sütik automatikus felderítése, jogszabálykövetés.
+79. **Akadálymentességi (WCAG) felügyelet és javítás** – Havi audit és javítás, megfelelőségi nyilatkozat karbantartása — az EU-irányelv egyre több céget érint.
+80. **Jogi szövegek és impresszum karbantartása** – ÁSZF, adatkezelési tájékoztató, impresszum rendszeres jogszabálykövető frissítése.
+81. **Versenytárs-hirdetés figyelés** – Havi riport a versenytársak Google- és Meta-hirdetéseiről, üzeneteiről, ajánlatairól.
+82. **Árfigyelő szolgáltatás webshopoknak és szolgáltatóknak** – Automatizált napi árkövetés, riasztás áreséskor, havi ártrend-riport.
+83. **Havi SEO-tartalomterv és kulcsszókutatás** – Havonta friss kulcsszó-lehetőségek és kész tartalomterv címekkel, vázlatokkal.
+84. **Linképítés havi csomagban** – Havonta megadott számú minőségi visszamutató link vendégcikkekkel, katalógusokkal, PR-megjelenésekkel.
+85. **AI-keresőláthatóság (ChatGPT/Gemini/AI Overviews) figyelés és optimalizálás** – Havi riport, hogyan jelenik meg a cég az AI-asszisztensek válaszaiban, és optimalizálás a jobb megjelenésért.
+86. **Weboldal AI-chatbot üzemeltetése** – A cég tudásbázisára betanított ügyfélszolgálati chatbot telepítése és havi karbantartása.
+87. **Lead-kezelő automatizmusok üzemeltetése** – Az érkező érdeklődők automatikus rögzítése, értesítések, follow-up e-mailek beállítása és karbantartása.
+88. **Havi konkurencia-SEO riport** – A versenytársak új tartalmainak, kulcsszónyereségeinek és linkjeinek havi elemzése, „mit csinálnak, amit mi nem" formában.
+89. **Landing oldal készítés és frissítés előfizetésben** – Havonta új landing oldal vagy frissítés kampányokhoz, szövegírással és designnal együtt.
+90. **Weboldal-tartalom frissen tartása** – Havi átnézés és aktualizálás: árak, nyitvatartás, csapat, referenciák, évszámok.
+91. **Videó- és rövid tartalom gyártás havi csomagban** – A cég nyersanyagaiból havi rövid videók (Reels, TikTok, Shorts) vágása és publikálása.
+92. **Podcast/videó újrahasznosítás szolgáltatás** – Egy hosszú tartalomból havi blogcikkek, posztok, idézetkártyák és hírlevelek gyártása.
+93. **Havi marketing-dashboard üzemeltetés** – Élő, automatikusan frissülő vezetői dashboard (Looker Studio) az összes csatorna adataival, havi kiértékeléssel.
+94. **Call tracking és telefonos lead-mérés** – Híváskövető számok üzemeltetése, a hívások forrásának mérése, havi csatorna-riport.
+95. **E-mail cím és domain feketelista-figyelés** – Folyamatos monitorozás spam-feketelistákra és adatszivárgási adatbázisokra, azonnali kezeléssel.
+96. **Álláshirdetési és munkáltatói márka jelenlét kezelése** – Karrieroldal-tartalmak, Glassdoor/Indeed-profilok és munkáltatói értékelések folyamatos gondozása.
+97. **Havi fotó- és grafikai kreatív csomag** – Fix mennyiségű banner, hirdetési kreatív, social grafika és nyomtatható anyag, korlátlan módosítással.
+98. **Webshop-termékadat és feed-menedzsment** – Google Shopping, árukereső és Meta katalógus-feedek karbantartása, hibajavítása, optimalizálása.
+99. **Negyedéves teljes marketing-audit előfizetésben** – Negyedévente teljes átvilágítás (weboldal, SEO, hirdetések, social, e-mail) pontozott akciótervvel.
+100. **„Digitális gondnok" óracsomag** – Havi keret, amelyben 24 órán belül elvégzünk minden apró weboldal-módosítást (szövegcsere, banner, új aloldal, kép).
 
 ---
 
 ## 3. lista — 50 továbbgondolt ötlet
 
-*(feltöltés alatt)*
+*A két lista kombinálásából, csomagosításából és üzleti modell szempontú továbbfejlesztéséből született ötletek.*
+
+### Csomagok és „őrszolgálat" modellek (több szolgáltatás egyben)
+
+101. **Weboldal-őrangyal csomag** – Uptime + backup + biztonság + CMS-karbantartás + SSL/domain-kezelés egyetlen havidíjban, három árszinten (Alap / Pro / Prémium). A technikai szolgáltatásokat külön eladni nehéz, egyben viszont ez a „weboldal-biztosítás", amit mindenki megért.
+102. **Megfelelőségi őrszolgálat** – GDPR + cookie + WCAG + ÁSZF/impresszum egy csomagban, folyamatos jogszabálykövetéssel és írásos megfelelőségi tanúsítvánnyal, amit az ügyfél kitehet az oldalára. A „bírságtól való félelem" az egyik legerősebb vásárlási motiváció.
+103. **Webshop-doktor csomag** – Feed-menedzsment + kosárelhagyó automatizmus + árfigyelés + termékleírás-írás webshopokra szabva, bevételarányos bónuszelemmel.
+104. **Helyi dominancia csomag** – Google Business Profile + citációk + véleménygyűjtés + helyi landing oldalak + helyi linképítés egyben, „légy első a térképen a városodban" pozicionálással.
+105. **Franchise / több telephelyes csomag** – Ugyanaz, mint a 104., de N telephelyre skálázva, központi összehasonlító riporttal: melyik egység teljesít alul. Láncoknak, franchise-oknak azonnal érthető érték.
+106. **Mérőállomás-csomag** – GA4 + konverziókövetés + call tracking + feed + dashboard egy kézben, SLA-val: „nálunk soha nem romlik el a mérésed, és ha mégis, 24 órán belül javítjuk".
+107. **Employer branding teljes kör** – Karrieroldal + állásportál-profilok + munkáltatói értékelés-válaszok + toborzó hirdetések + „nálunk dolgozni jó" tartalom egyben — a munkaerőhiány miatt örökzöld.
+
+### Riport- és figyelőszolgáltatások továbbfejlesztve
+
+108. **„Hétfő reggeli 5 perc" vezetői riport** – Minden hétfőn 5 pontos, 5 perc alatt elolvasható e-mail: mi történt a weboldalon, hirdetésekben, konkurenciánál — a havi riport helyett heti ritmusban, vezetői nyelven. A riport maga a termék.
+109. **Marketing P&L riport** – Havi „marketing-könyvelés": melyik csatorna mennyibe került és mennyi bevételt hozott, forintban, csatornánként. Nem adatot ad, hanem üzleti döntést.
+110. **Konkurencia-iker szolgáltatás** – Kiválasztunk 3 versenytársat, és mindent, amit ők lépnek (új tartalom, akció, hirdetés, áresés), 48 órán belül jelezzük konkrét válaszjavaslattal. A figyelés (37., 60.) reagálássá fejlesztve.
+111. **Versenytárs-weboldal változásfigyelő** – Pixel-szintű összehasonlítás a konkurens oldalakról: új aloldal, árváltozás, új szolgáltatás — heti diff-riasztás. Technikailag automatizálható, mégis prémiumnak hat.
+112. **Ártárgyalási muníció-riport** – Negyedéves piaci ár-benchmark, kifejezetten azzal a céllal, hogy az ügyfél magabiztosan árat emelhessen. Az árfigyelés (82.) átfordítva közvetlen profitnövelő eszközzé.
+113. **Bevétel-anomália riasztás webshopoknak** – Nem a forgalmat, hanem a bevételt figyeljük órás bontásban; ha beesik, 1 órán belül riasztunk okelemzéssel (elromlott fizetési kapu, kifogyott sláger termék). A 13. ötlet e-commerce-re élezve.
+114. **KPI-őr szolgáltatás** – Az ügyféllel közösen kitűzött 3 KPI-t figyeljük folyamatosan, és csak akkor jelentkezünk (és dolgozunk), ha valamelyik letér a pályáról. Minimál zaj, maximum bizalom — olcsó belépő termék.
+115. **Weboldal-öregedés index** – Évente pontozzuk az oldal designját, technológiáját, tartalmát egy 100 pontos skálán, és ütemezett felújítási tervet adunk. A pontszám önmagában upsell-gépezet.
+116. **„Első benyomás" audit negyedévente** – Friss szemmel és AI-val végigmegyünk minden ügyfél-érintkezési ponton (weboldal, telefon, e-mail, ajánlatkérés), és kívülről jelentjük, mit tapasztal egy új érdeklődő. A mystery shopping (16.) rendszeres szolgáltatássá alakítva.
+
+### Tartalom-modellek minimális ügyfél-inputtal
+
+117. **Tartalom-atom szolgáltatás** – Havi egyetlen 30 perces telefoninterjú az ügyvezetővel, ebből: 1 blogcikk + hírlevél + 8 social poszt + videó-script. Az ügyfél egyetlen inputja egy beszélgetés — minden más a miénk.
+118. **Zéró-input tartalomgyár** – Interjú sem kell: a cég meglévő értékeléseiből, ügyfélkérdéseiből, régi anyagaiból gyártunk havi tartalomcsomagot. A 30., 42., 92. ötletek végletekig vitt verziója.
+119. **Kurátor-hírlevél a cég nevében** – Mi válogatjuk össze az iparág legfontosabb híreit, és a cég szakértői hírleveleként küldjük ki — a cég gondolatvezérré válik anélkül, hogy bármit írnia kellene.
+120. **Review-flywheel** – Véleménygyűjtés + válaszírás + a legjobb értékelésekből social kreatívok, weboldal-widgetek és hirdetési szövegek gyártása. Egy adatforrásból három szolgáltatás (66. + 65. + 97. kombinálva).
+121. **Chatbot–FAQ–tartalom hurok** – A chatbot (86.) beszélgetéseiből automatikusan bővül a FAQ-oldal (31.), a leggyakoribb kérdésekből pedig blogtéma lesz (63.). Önmagát tápláló tartalomgép.
+122. **Negyedéves tartalomgyártó nap** – Negyedévente egy helyszíni fotó-videó nap, amiből egész negyedévre elegendő nyersanyag készül; a köztes hónapokban ebből gyártjuk a social- és hirdetési tartalmat.
+123. **LinkedIn-vezérigazgató szolgáltatás** – A cégvezető személyes márkájának teljes ghostwriting-kezelése: heti posztok, kommentelés, kapcsolatépítés a nevében. B2B-ben a személyes márka veri a céges oldalt.
+124. **Sales-anyag frissesség-előfizetés** – Árajánlat-sablonok, prezentációk, one-pagerek, cégismertetők naprakészen tartása és igény szerinti gyártása — a weboldal-frissesség (90.) kiterjesztése a teljes értékesítési anyagra.
+125. **Onboarding-tudásbázis szolgáltatás** – A cég ügyfeleinek szóló „hogyan használd" videók, útmutatók, tudásbázis gyártása és frissítése — csökkenti az ügyfél support-terhét, ezért könnyű eladni.
+
+### AI-korszak új szolgáltatásai
+
+126. **GEO-őrszolgálat (Generative Engine Optimization)** – Havi riport arról, mit mond a ChatGPT, a Gemini és a Google AI Overviews a cégről és a kategóriájáról, versenytárs-összehasonlítással, plusz tartalmi-technikai optimalizálás a jobb AI-megjelenésért. A 85. ötlet teljes szolgáltatássá építve — ez lesz a következő évek „SEO-ja".
+127. **AI-tartalom-lektor** – A cég által bárhol gyártott (akár AI-val írt) tartalmak kiadás előtti ellenőrzése: SEO, márka-hang, jogi kockázat, tényellenőrzés. Ahogy mindenki AI-val ír, a minőség-ellenőrzés válik szűk keresztmetszetté.
+128. **AI-válaszkész ügyfélszolgálat-őr** – A chatbot (86.) + lead-reszponz (87.) kombinációja SLA-val: minden érdeklődő 60 másodpercen belül értelmes első választ kap, éjjel is; a meleg leadeket emberhez irányítjuk.
+129. **Hangalapú és AI-keresés optimalizálás lokális cégeknek** – „Okoshangszóró-SEO": strukturált adatok, GBP és tartalom optimalizálása arra, hogy a „hol van a legközelebbi…" kérdésekre a cég legyen a válasz.
+130. **AI-automatizálás üzemeltetés** – A cég ismétlődő marketingfolyamatait (riportok, posztok, válaszok) AI-munkafolyamatokkal automatizáljuk és üzemeltetjük havidíjért — nem eszközt adunk el, hanem működő rendszert.
+
+### Védelem, hírnév, folytonosság
+
+131. **Brand-védelem csomag** – Márkanévre hirdető konkurensek figyelése és fellépés, hamis profilok/oldalak jelentése, védjegy-figyelés. A hírnévfigyelés (67.) aktív védelemmé fejlesztve.
+132. **Domain-portfólió menedzsment** – Elgépelési domainek felvásárlása, lejárat-kezelés, cybersquatting-figyelés — a 6. és 56. ötlet portfólió-szintre emelve.
+133. **Válságkommunikációs készenlét** – Előre megírt válságforgatókönyvek + említésfigyelés + 2 órás reagálási SLA negatív hír vagy shitstorm esetén. Biztosítási logika: azért fizet, hogy soha ne kelljen.
+134. **Digitális folytonossági terv** – A cég összes digitális eszközének (domainek, tárhelyek, fiókok, hozzáférések, tulajdonjogok) rendezett nyilvántartása és őrzése — „mi történik, ha a mostani fejlesztőd holnap eltűnik?". Szinte minden KKV-nál fájó pont.
+135. **Weboldal-életbiztosítás** – A 112%-os garancia: hack, tárhelycsőd vagy teljes törlés esetén 24 órán belül más infrastruktúrán újraélesztjük az oldalt. A backup (52.) átcsomagolva érthető ígéretté.
+136. **Adat-takarító szolgáltatás** – CRM, hírlevél-lista, analytics rendszeres tisztítása: duplikátumok, halott címek, szemét-adatok — a 70. kiterjesztve minden ügyféladatra.
+
+### Bevételnövelő és megtartó modellek
+
+137. **Alvó ügyfél reaktiváló program** – A cég meglévő (alvó) adatbázisára negyedéves visszahozó kampányok, részben sikerdíjas modellben — a legkönnyebben igazolható ROI-jú szolgáltatás.
+138. **Ajánlórendszer-üzemeltetés** – „Hozz egy barátot" program felépítése, adminisztrálása és promótálása az ügyfél helyett — a szájreklám rendszerré alakítva.
+139. **Kosárérték-növelő program** – Upsell/cross-sell elemek, csomagajánlatok, ingyenes szállítási küszöb folyamatos tesztelése webshopokban; a CRO (76.) bevétel-fókuszra élezve.
+140. **Hirdetés-második-vélemény** – Nem kezeljük a fiókot, csak havonta függetlenül auditáljuk a meglévő ügynökség munkáját. Nem konkurálunk az ügynökséggel — ellenőrizzük; összeférhetetlenség-mentes, könnyű belépő.
+141. **Szezonnaptár-vezérelt kampánygép** – Éves magyar szezonnaptár (ünnepek, iparági csúcsok, kereskedelmi napok) alapján előre legyártott és automatikusan élesített kampányok — az ügyfélnek soha nem kell eszébe jusson a karácsony.
+142. **E-mail automatizmus-könyvtár iparáganként** – Kész, bevált e-mail folyamatok (fodrász, fogorvos, webshop, étterem…) telepítése és karbantartása — a 71. skálázható, iparágra szabott termékként.
+
+### Üzleti modell- és árazási innovációk
+
+143. **Website-as-a-Service („marketing-főbérlő")** – Mi építjük és birtokoljuk a teljes digitális jelenlétet (weboldal, tartalom, hirdetés), az ügyfél havidíjért bérli — nulla kezdeti költség, örök előfizetés.
+144. **Sikerdíjas véleménynövelés** – Csak a ténylegesen megszerzett új Google-értékelések után fizet az ügyfél — kockázatmentes belépő, ami után könnyű a többi szolgáltatást eladni.
+145. **Biztosítás-modell árazás** – Alacsony alap havidíj a folyamatos figyelésért (uptime, anomália, említés), és csak akkor számlázunk munkadíjat, ha a riasztórendszer talált valamit és beavatkoztunk.
+146. **„Csendes hónap" garancia** – Ha egy hónapban semmilyen beavatkozásra nem volt szükség, az ügyfél jóváírást kap — bizalomépítő árazás, ami a lemorzsolódást csökkenti.
+147. **Éves marketing-évkönyv** – Év végén az összes adat, eredmény és tartalom díszkiadású, nyomtatott évkönyvben — költsége minimális, megtartó ereje óriási: kézzelfoghatóvá teszi az egész éves munkát.
+148. **Ingyenes digitális állapotfelmérés mint belépő termék** – Automatizált, 50 pontos átvilágítás (sebesség, SEO, megfelelőség, hírnév) látványos pontszámmal — maga a lead-generátor, amiből minden fenti csomag felé automatikus upsell-útvonal vezet.
+149. **White-label viszonteladói program** – Az összes fenti szolgáltatás fehércímkés nagykereskedelme más ügynökségeknek és webfejlesztőknek — ők adják el, mi szállítjuk; a skálázás leggyorsabb útja.
+150. **Nemzetközi láthatóság-csomag** – Többnyelvű SEO, hreflang-kezelés, fordítás-karbantartás és külföldi katalógus-jelenlét exportáló KKV-knak — a magyar piacon alig kínált, EU-s pályázatokból is finanszírozható szolgáltatás.
