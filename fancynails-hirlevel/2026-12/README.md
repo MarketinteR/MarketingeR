@@ -23,7 +23,8 @@ A termékek, képek, árak (ár nincs a levélben), a lábléc és a `[link_unsu
 
 ## Kiküldés előtt (12-01, hétfő, a Macen)
 
-- [ ] Mind a 14 link él (200), és a 6 termék készlete ≥ 22 db (UNAS API). A felhős session nem éri el a fancynails.hu-t, ezért ezt itt nem tudtam ellenőrizni.
+- [x] Mind a 17 link és kép él (HTTP 200), és mind a 6 termék raktáron van (schema.org InStock). Ellenőrizve 2026-11-23-án, élőben.
+- [ ] A darabszámos készlet ≥ 22 db (UNAS API, a Macen). 12-01-én nézd meg újra.
 - [ ] A képek az UNAS fájlkezelőből töltődnek (`shop.unas.hu/shop_ordered/26106/pic/hirlevel/…`).
 - [ ] Tesztlevél Lacinak, mobilon és asztali gépen megnézve.
 - [ ] Zoli nem jelzett problémát a péntekig tartó határidőig.
