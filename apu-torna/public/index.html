@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0d1726">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Apu Torna</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1. Feloldás (a böngésző csak érintés után enged hangot) -->
+  <section id="unlock" class="screen on">
+    <img class="logo" src="icon.svg" alt="">
+    <h1>Apu Torna</h1>
+    <button id="unlockBtn" class="btn big go pulseBtn">Koppints ide! 👆</button>
+  </section>
+
+  <!-- 2. Főképernyő -->
+  <section id="home" class="screen">
+    <div class="left">
+      <div>
+        <div class="clock" id="clock">--:--</div>
+        <div class="date" id="date"></div>
+      </div>
+      <div class="hello" id="hello"></div>
+      <div class="slots" id="slots"></div>
+      <div class="stats">
+        <div class="stat"><b id="stStreak">0</b><span>🔥 nap egymás után</span></div>
+        <div class="stat"><b id="stStars">0</b><span>⭐ csillag</span></div>
+        <div class="stat"><b id="stLevel">1</b><span>⛰️ szint</span></div>
+      </div>
+      <button id="startBtn" class="btn big go">💪 Tornázzunk!</button>
+    </div>
+    <div class="right">
+      <div class="mountainBox">
+        <div id="mountain"></div>
+        <div class="goalLine">🏁 A cél: <b id="goalText"></b></div>
+      </div>
+      <div class="kidCard" id="kidCard"></div>
+    </div>
+    <button class="gear" id="gear" aria-label="Beállítások">⚙️</button>
+    <div class="netDot" id="netDot"></div>
+  </section>
+
+  <!-- 3. Hogy érzed magad? -->
+  <section id="feel" class="screen ask">
+    <h2 id="feelTitle">Hogy érzed magad?</h2>
+    <div class="sub">Mondd ki, vagy nyomd meg!</div>
+    <div class="choices" id="feelChoices"></div>
+    <div class="mic" id="feelMic"><span class="dot"></span><span class="t"></span></div>
+    <button class="btn ghost small" data-act="home">⬅ Vissza</button>
+  </section>
+
+  <!-- 4. Gyakorlat -->
+  <section id="exercise" class="screen">
+    <div class="figWrap" id="figWrap">
+      <div class="helper hide" id="helperBadge">👥 Kísérővel!</div>
+      <div id="figure" style="flex:1;display:flex;min-height:0"></div>
+      <div class="counter">
+        <div class="ring">
+          <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="#2c4470" stroke-width="10"/><circle id="ringArc" cx="60" cy="60" r="52" fill="none" stroke="#ff9f1c" stroke-width="10" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="0"/></svg>
+          <div class="num"><b id="cNum">0</b><span id="cSub"></span></div>
+        </div>
+        <div class="phase" id="cPhase"></div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="exTop"><span id="exCount"></span><div class="dots" id="exDots"></div></div>
+      <h2 class="exName" id="exName"></h2>
+      <div class="exWhy" id="exWhy"></div>
+      <div class="exDose" id="exDose"></div>
+      <ol class="steps" id="exSteps"></ol>
+      <div class="caution hide" id="exCaution"></div>
+      <div class="autoNote" id="autoNote"></div>
+      <div class="exBtns" id="btnsIdle">
+        <button class="btn ghost small" id="skipBtn">Kihagyom</button>
+        <button class="btn ghost small" id="repeatBtn">🔊 Újra</button>
+        <button class="btn big go" id="goBtn">▶ Mehet!</button>
+      </div>
+      <div class="exBtns hide" id="btnsRun">
+        <button class="btn small" id="pauseBtn">❚❚ Szünet</button>
+        <button class="btn big green" id="doneBtn" style="flex:1">✔ Kész vagyok</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Hogy ment? -->
+  <section id="feedback" class="screen ask">
+    <h2>Hogy ment?</h2>
+    <div class="sub" id="fbSub"></div>
+    <div class="choices three" id="fbChoices"></div>
+    <div class="mic" id="fbMic"><span class="dot"></span><span class="t"></span></div>
+  </section>
+
+  <!-- 6. Fájdalom után: folytatjuk? -->
+  <section id="painAsk" class="screen ask">
+    <h2>Folytassuk, vagy elég mára?</h2>
+    <div class="sub">Ha erősen fáj, szólj valakinek!</div>
+    <div class="choices">
+      <button class="choice" id="painGo"><span class="em">▶️</span><span><b>Folytatom</b><small>Óvatosan megyünk tovább</small></span></button>
+      <button class="choice" id="painStop"><span class="em">🛑</span><span><b>Elég mára</b><small>Pihenek</small></span></button>
+    </div>
+    <div class="mic" id="painMic"><span class="dot"></span><span class="t"></span></div>
+  </section>
+
+  <!-- 7. Vége -->
+  <section id="done" class="screen">
+    <h2 id="doneTitle">Ügyes voltál!</h2>
+    <div class="starsWon" id="starsWon"></div>
+    <div class="levelUp hide" id="levelUp"></div>
+    <div class="reward hide" id="reward"></div>
+    <div class="muted" id="doneInfo" style="font-size:28px"></div>
+    <button class="btn big green" data-act="home">🏠 Kész</button>
+  </section>
+
+  <!-- 8. Emlékeztető -->
+  <section id="remind" class="screen">
+    <div class="ph" id="remindPh">💪</div>
+    <h2 id="remindTitle"></h2>
+    <p id="remindSub"></p>
+    <button class="btn big go pulseBtn" id="remindGo">💪 Kezdjük!</button>
+    <button class="btn ghost small" id="remindLater">⏰ 15 perc múlva</button>
+  </section>
+
+  <script src="exercises.js"></script>
+  <script src="engine.js"></script>
+  <script src="phrases.js"></script>
+  <script src="figures.js"></script>
+  <script src="store.js"></script>
+  <script src="voice.js"></script>
+  <script src="mountain.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "apu-torna",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tornáztató app Apunak – tablet, saját hang, unokás motiváció",
+  "scripts": { "start": "node server.js", "test": "node tests/engine.test.js" },
+  "engines": { "node": ">=18" }
+}

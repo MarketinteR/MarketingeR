@@ -1,0 +1,155 @@
+/* Apu Torna – nagy betűk, nagy gombok, sötét „hegyi este” téma. Gyenge tabletre optimalizálva: nincs blur, kevés árnyék. */
+:root {
+  --bg: #0d1726; --bg2: #14223a; --card: #1a2b47; --card2: #213659; --line: #2c4470;
+  --text: #f2f6fc; --muted: #9fb3cf; --accent: #ff9f1c; --accent2: #ffbf69; --green: #3ecf8e; --red: #ff5d5d; --blue: #4ea8ff; --gold: #ffd166;
+  --r: 22px;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font-family: "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif; overflow: hidden; user-select: none; -webkit-user-select: none; }
+body { font-size: 24px; }
+button { font: inherit; color: inherit; border: 0; cursor: pointer; }
+.screen { position: fixed; inset: 0; display: none; padding: 24px 28px; overflow: hidden; }
+.screen.on { display: flex; }
+.hide { display: none !important; }
+.muted { color: var(--muted); }
+
+/* ── gombok ── */
+.btn { background: var(--card2); border-radius: var(--r); padding: 18px 26px; font-weight: 700; font-size: 28px; display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 84px; transition: transform .08s; }
+.btn:active { transform: scale(.97); }
+.btn.big { font-size: 40px; min-height: 120px; padding: 20px 40px; }
+.btn.go { background: linear-gradient(180deg, #ffad33, #ff8a00); color: #1b1200; box-shadow: 0 6px 0 #b35f00; }
+.btn.green { background: linear-gradient(180deg, #4fe09d, #27b574); color: #04210f; box-shadow: 0 6px 0 #17804f; }
+.btn.ghost { background: transparent; border: 3px solid var(--line); color: var(--muted); }
+.btn.small { font-size: 22px; min-height: 64px; padding: 12px 20px; }
+.pulseBtn { animation: pulseBtn 1.6s ease-in-out infinite; }
+@keyframes pulseBtn { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+
+/* ── feloldó képernyő ── */
+#unlock { align-items: center; justify-content: center; flex-direction: column; text-align: center; gap: 30px; background: radial-gradient(circle at 50% 35%, #1f3a63, var(--bg) 70%); }
+#unlock h1 { font-size: 64px; margin: 0; }
+#unlock .logo { width: 180px; height: 180px; }
+
+/* ── főképernyő ── */
+#home { gap: 26px; }
+#home .left { flex: 0 0 44%; display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+#home .right { flex: 1; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.clock { font-size: 92px; font-weight: 800; line-height: 1; letter-spacing: 1px; }
+.date { font-size: 28px; color: var(--muted); }
+.hello { font-size: 40px; font-weight: 800; line-height: 1.15; }
+.slots { display: flex; gap: 12px; flex-wrap: wrap; }
+.slot { background: var(--card); border-radius: 16px; padding: 10px 18px; font-size: 26px; font-weight: 700; display: flex; align-items: center; gap: 8px; border: 3px solid transparent; }
+.slot.done { background: #163d33; color: var(--green); }
+.slot.now { border-color: var(--accent); color: var(--accent2); }
+.stats { display: flex; gap: 14px; }
+.stat { flex: 1; background: var(--card); border-radius: var(--r); padding: 14px 16px; text-align: center; }
+.stat b { display: block; font-size: 44px; line-height: 1.1; }
+.stat span { font-size: 20px; color: var(--muted); }
+#startBtn { width: 100%; margin-top: auto; }
+.mountainBox { flex: 1; background: var(--bg2); border-radius: var(--r); overflow: hidden; position: relative; min-height: 0; }
+.mountainBox svg { width: 100%; height: 100%; display: block; }
+.goalLine { position: absolute; left: 0; right: 0; bottom: 0; padding: 12px 18px; background: linear-gradient(0deg, rgba(13,23,38,.95), rgba(13,23,38,0)); font-size: 24px; }
+.goalLine b { color: var(--gold); }
+.kidCard { display: flex; align-items: center; gap: 18px; background: var(--card); border-radius: var(--r); padding: 14px 18px; min-height: 120px; }
+.kidCard .ph { width: 96px; height: 96px; border-radius: 50%; flex: 0 0 auto; background: var(--card2) center/cover; border: 4px solid var(--accent); display: flex; align-items: center; justify-content: center; font-size: 44px; font-weight: 800; }
+.kidCard .msg { font-size: 26px; line-height: 1.25; }
+.kidCard .msg b { color: var(--accent2); }
+.gear { position: fixed; right: 10px; top: 8px; opacity: .25; font-size: 22px; padding: 10px; background: none; }
+.netDot { position: fixed; left: 10px; bottom: 8px; font-size: 16px; color: var(--muted); opacity: .6; }
+
+/* ── kérdés képernyők (hangulat, visszajelzés) ── */
+.ask { flex-direction: column; align-items: center; justify-content: center; gap: 22px; text-align: center; }
+.ask h2 { font-size: 52px; margin: 0; }
+.ask .sub { font-size: 28px; color: var(--muted); margin-top: -10px; }
+.choices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; width: min(1100px, 100%); }
+.choices.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.choice { background: var(--card); border-radius: var(--r); padding: 16px; min-height: 130px; display: flex; align-items: center; gap: 18px; text-align: left; border: 4px solid transparent; }
+.choice .em { font-size: 64px; line-height: 1; }
+.choice b { font-size: 34px; display: block; }
+.choice small { font-size: 22px; color: var(--muted); }
+.choice.sel { border-color: var(--accent); background: var(--card2); }
+.choice.pain { border-color: #5a2a2a; }
+.mic { display: flex; align-items: center; gap: 12px; font-size: 24px; color: var(--muted); min-height: 50px; }
+.mic .dot { width: 22px; height: 22px; border-radius: 50%; background: var(--line); }
+.mic.on { color: var(--green); }
+.mic.on .dot { background: var(--green); animation: blink 1s infinite; }
+@keyframes blink { 50% { opacity: .3; } }
+.micBtn { background: var(--card); border-radius: 50%; width: 84px; height: 84px; font-size: 40px; }
+
+/* ── gyakorlat képernyő ── */
+#exercise { gap: 26px; }
+#exercise .figWrap { flex: 0 0 52%; background: var(--bg2); border-radius: var(--r); display: flex; flex-direction: column; padding: 16px; min-width: 0; position: relative; }
+#exercise .figWrap svg { flex: 1; width: 100%; min-height: 0; }
+#exercise .info { flex: 1; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.exTop { display: flex; justify-content: space-between; align-items: center; font-size: 22px; color: var(--muted); }
+.dots { display: flex; gap: 6px; }
+.dots i { width: 16px; height: 16px; border-radius: 50%; background: var(--line); }
+.dots i.done { background: var(--green); }
+.dots i.cur { background: var(--accent); }
+.exName { font-size: 46px; font-weight: 800; line-height: 1.1; margin: 0; }
+.exWhy { font-size: 24px; color: var(--accent2); }
+.exDose { font-size: 34px; font-weight: 800; background: var(--card); border-radius: 16px; padding: 8px 16px; align-self: flex-start; }
+.steps { margin: 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.steps li { font-size: 26px; line-height: 1.3; display: flex; gap: 12px; }
+.steps li::before { content: counter(st); counter-increment: st; flex: 0 0 38px; height: 38px; border-radius: 50%; background: var(--card2); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 22px; }
+.steps { counter-reset: st; }
+.caution { background: #3a1e1e; color: #ffb4b4; border-radius: 14px; padding: 10px 16px; font-size: 24px; font-weight: 700; }
+.helper { position: absolute; top: 14px; left: 14px; background: var(--red); color: #fff; font-weight: 800; border-radius: 12px; padding: 6px 14px; font-size: 22px; }
+.exBtns { margin-top: auto; display: flex; gap: 14px; }
+.exBtns .btn.go { flex: 1; }
+.autoNote { font-size: 22px; color: var(--muted); min-height: 28px; }
+
+/* futás közbeni nagy számláló */
+.counter { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; flex-direction: column; background: rgba(13,23,38,.82); border-radius: var(--r); }
+.running .counter { display: flex; }
+.ring { width: 300px; height: 300px; position: relative; }
+.ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.ring .num { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+.ring .num b { font-size: 110px; line-height: 1; }
+.ring .num span { font-size: 26px; color: var(--muted); }
+.phase { font-size: 44px; font-weight: 800; margin-top: 10px; color: var(--accent2); min-height: 56px; }
+.phase.hold { color: var(--accent); }
+.phase.relax { color: var(--green); }
+
+/* ── vége képernyő ── */
+#done { flex-direction: column; align-items: center; justify-content: center; gap: 20px; text-align: center; background: radial-gradient(circle at 50% 30%, #2a3f1f, var(--bg) 70%); }
+#done h2 { font-size: 64px; margin: 0; }
+.starsWon { font-size: 80px; font-weight: 900; color: var(--gold); }
+.reward { display: flex; gap: 24px; align-items: center; background: var(--card); border-radius: var(--r); padding: 18px 24px; max-width: 1000px; text-align: left; }
+.reward .ph { width: 170px; height: 170px; border-radius: 24px; background: var(--card2) center/cover; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; font-size: 80px; border: 5px solid var(--gold); }
+.reward .from { font-size: 24px; color: var(--gold); font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+.reward .txt { font-size: 34px; line-height: 1.25; margin-top: 6px; }
+.levelUp { font-size: 40px; font-weight: 900; color: var(--green); }
+
+/* ── emlékeztető ── */
+#remind { flex-direction: column; align-items: center; justify-content: center; gap: 26px; text-align: center; background: radial-gradient(circle at 50% 40%, #3b2a10, var(--bg) 70%); z-index: 50; }
+#remind .ph { width: 260px; height: 260px; border-radius: 50%; background: var(--card2) center/cover; border: 8px solid var(--accent); display: flex; align-items: center; justify-content: center; font-size: 120px; }
+#remind h2 { font-size: 58px; margin: 0; }
+#remind p { font-size: 32px; margin: 0; color: var(--accent2); }
+
+/* ── ábra animáció ── */
+.fig .fA { animation: figA var(--dur, 3.2s) ease-in-out infinite; }
+.fig .fB { animation: figB var(--dur, 3.2s) ease-in-out infinite; }
+@keyframes figA { 0%, 38% { opacity: 1; } 50%, 88% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes figB { 0%, 38% { opacity: 0; } 50%, 88% { opacity: 1; } 100% { opacity: 0; } }
+.fig .pulse { animation: pulseFig 1.8s ease-in-out infinite; }
+@keyframes pulseFig { 0%, 100% { opacity: 1; } 50% { opacity: .45; } }
+
+/* ── konfetti ── */
+.confetti { position: fixed; top: -60px; font-size: 44px; pointer-events: none; animation: fall linear forwards; z-index: 60; }
+@keyframes fall { to { transform: translateY(115vh) rotate(360deg); } }
+
+/* ── álló tablet / kis képernyő ── */
+@media (orientation: portrait), (max-width: 900px) {
+  body { font-size: 22px; }
+  .screen { padding: 16px; }
+  #home, #exercise { flex-direction: column; overflow-y: auto; }
+  #home .left, #exercise .figWrap { flex: 0 0 auto; }
+  #exercise .figWrap { height: 42vh; }
+  .mountainBox { min-height: 300px; }
+  .clock { font-size: 72px; }
+  .choices.three { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .choice { min-height: 100px; }
+  .choice .em { font-size: 48px; }
+  .choice b { font-size: 26px; }
+  .ask h2 { font-size: 40px; }
+}
